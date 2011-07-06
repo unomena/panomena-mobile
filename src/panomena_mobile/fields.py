@@ -47,7 +47,6 @@ class MsisdnField(forms.Field):
         else:
             country_code = groups[0]
             # check for valid country code
-            restrict = self.restrict_country_code
             if restrict and country_code != restrict:
                 raise ValidationError(
                     error_messages['invalid_country_code'] % restrict

@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name='panomena-mobile',
     description='Panomena Mobile',
-    version='0.0.1',
+    version='0.0.2,
     author='',
     license='Proprietory',
     url='http://www.unomena.com/',
@@ -11,6 +11,6 @@ setup(
     package_dir = {'': 'src'},
     dependency_links = [],
     install_requires = [
-        'Django==1.2.5',
+        'Django',
     ],
 )

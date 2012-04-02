@@ -20,7 +20,7 @@ class MsisdnField(forms.Field):
     }
 
     def __init__(self, default_country_code=None, restrict_country_code=None,
-                 valid_prefixes=None, max_length=11, min_length=11,
+                 valid_prefixes=None, max_length=11, min_length=11, help_text='',
                  *args, **kwargs):
         super(MsisdnField, self).__init__(*args, **kwargs)
         self.restrict_country_code = restrict_country_code
@@ -28,6 +28,7 @@ class MsisdnField(forms.Field):
         self.valid_prefixes = valid_prefixes
         self.max_length = max_length
         self.min_length = min_length
+        self.help_text = 'A mobile number with international dialling code eg: 27831234567'
 
     def valid_prefix(self, number):
         """Confirms a valid prefix."""

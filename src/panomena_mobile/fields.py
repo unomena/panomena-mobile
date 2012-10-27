@@ -15,12 +15,12 @@ class MsisdnField(forms.Field):
         'invalid': _(u'Enter a valid mobile number.'),
         'invalid_country_code': _(u'Enter a number with the %s country code.'),
         'invalid_prefix': _(u'Enter a number with a valid prefix.'),
-        'too_short': _(u'Enter a mobile number, consisting of minimum 11, maximum 13 digits eg: 27831234567'),
-        'too_long': _(u'Enter a mobile number, consisting of minimum 11, maximum 13 digits eg: 27831234567'),
+        'too_short': _(u'Enter a mobile number, consisting of minimum 11, maximum 14 digits eg: 27831234567'),
+        'too_long': _(u'Enter a mobile number, consisting of minimum 11, maximum 14 digits eg: 27831234567'),
     }
 
     def __init__(self, default_country_code=None, restrict_country_code=None,
-                 valid_prefixes=None, max_length=13, min_length=11, help_text='',
+                 valid_prefixes=None, max_length=14, min_length=11, help_text='',
                  *args, **kwargs):
         super(MsisdnField, self).__init__(*args, **kwargs)
         self.restrict_country_code = restrict_country_code

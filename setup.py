@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name='panomena-mobile',
     description='Panomena Mobile',
-    version='0.0.8',
+    version='0.0.9',
     author='',
     license='Proprietory',
     url='http://www.unomena.com/',
